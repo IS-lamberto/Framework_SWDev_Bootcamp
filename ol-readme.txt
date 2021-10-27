@@ -1,1 +1,1 @@
-Readme for step 7
+Readme for step 6
