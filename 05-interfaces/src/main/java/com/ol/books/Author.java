@@ -22,7 +22,7 @@ public class Author extends Person implements PrettyPrinter{
 
     @Override
     public void prettyPrint() {
-
+        System.out.printf("Author [name=%s, address=%s, genre=%s]%n", super.getName(), super.getAddress(), genre);
     }
 
     @Override
