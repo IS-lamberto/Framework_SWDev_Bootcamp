@@ -1,6 +1,6 @@
 package com.ol.books;
 
-public class Author extends Person {
+public class Author extends Person implements PrettyPrinter{
     private String genre;
 
     public Author(String name, Address address) {
@@ -18,6 +18,11 @@ public class Author extends Person {
 
     public void setGenre(String genre) {
         this.genre = genre;
+    }
+
+    @Override
+    public void prettyPrint() {
+
     }
 
     @Override

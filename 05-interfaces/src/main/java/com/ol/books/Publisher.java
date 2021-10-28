@@ -1,6 +1,6 @@
 package com.ol.books;
 
-public class Publisher extends Person {
+public class Publisher extends Person implements PrettyPrinter {
     private String orgName;
 
     public Publisher(String name, Address address) {
@@ -18,6 +18,11 @@ public class Publisher extends Person {
 
     public void setOrgName(String orgName) {
         this.orgName = orgName;
+    }
+
+    @Override
+    public void prettyPrint() {
+        
     }
 
     @Override

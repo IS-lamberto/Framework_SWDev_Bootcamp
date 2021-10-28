@@ -27,6 +27,14 @@ public class BookshopApp {
                 author, publisher);
         System.out.println("\nBook2: " + book2);
         System.out.println("Book Instance Count: " + Book.getCount());
+
+        Sales salesProduct = book;
+        salesProduct.setSaleDiscount(10.0);
+        System.out.println("Sale price of book: " +
+                salesProduct.calculateSalePrice());
+
+        author.prettyPrint();
+        publisher.prettyPrint();
     }
 }
 
