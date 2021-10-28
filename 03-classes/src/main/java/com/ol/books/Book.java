@@ -1,4 +1,4 @@
-package com.ol.bookshop;
+package com.ol.books;
 
 public class Book {
     private String title;

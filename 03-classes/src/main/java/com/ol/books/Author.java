@@ -1,10 +1,10 @@
-package com.ol.bookshop;
+package com.ol.books;
 
-public class Publisher {
+public class Author {
     private String name;
     private Address address;
 
-    public Publisher(String name, Address address) {
+    public Author(String name, Address address) {
         this.name = name;
         this.address = address;
     }
@@ -27,7 +27,7 @@ public class Publisher {
 
     @Override
     public String toString() {
-        return "Publisher{" +
+        return "Author{" +
                 "name='" + name + '\'' +
                 ", address=" + address +
                 '}';

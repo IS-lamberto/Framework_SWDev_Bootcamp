@@ -1,4 +1,6 @@
-package com.ol.bookshop;
+package com.ol.main;
+
+import com.ol.books.*;
 
 public class BookshopApp {
     public static void main(String[] args) {
