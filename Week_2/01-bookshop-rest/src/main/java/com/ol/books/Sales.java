@@ -1,4 +1,4 @@
-package com.jjh.books;
+package com.ol.books;
 
 public interface Sales {
 

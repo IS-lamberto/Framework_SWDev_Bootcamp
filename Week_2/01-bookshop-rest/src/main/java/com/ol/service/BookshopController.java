@@ -1,8 +1,8 @@
-package com.jjh.service;
+package com.ol.service;
 
-import com.jjh.books.Book;
-import com.jjh.books.BookException;
-import com.jjh.books.Bookshop;
+import com.ol.books.Book;
+import com.ol.books.BookException;
+import com.ol.books.Bookshop;
 import org.springframework.http.HttpStatus;
 import org.springframework.web.bind.annotation.*;
 

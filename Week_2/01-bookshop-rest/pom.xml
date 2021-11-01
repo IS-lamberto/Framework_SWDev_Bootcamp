@@ -11,7 +11,7 @@
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
 
-    <groupId>com.jjh</groupId>
+    <groupId>com.ol</groupId>
     <artifactId>01-bookshop-rest</artifactId>
     <version>1.0-SNAPSHOT</version>
 
