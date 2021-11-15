@@ -1,0 +1,36 @@
+/* There are three types of CSS style */
+
+
+/* Tag style - automatically applied */
+
+p {
+    color: crimson;
+}
+
+h1 {
+    font-size: 500%;
+}
+
+p, li {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+input {
+    background-color: goldenrod;
+}
+
+
+/* Class style - manually apply anywhere */
+
+.highlight {
+    background-color: lightcoral;
+}
+
+
+/* ID style - manually apply ONCE */
+
+#legaltext {
+    background-color: black;
+    color: darkgoldenrod;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
