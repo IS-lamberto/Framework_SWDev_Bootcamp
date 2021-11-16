@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Using jQuery in web pages</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+        // JS should be on it's own file in production
+        $(function () { // EVERYTHING related to jQuery MUST be inside this function
+            console.log('jQuery has started')
+            $('h1').click(function () {
+                console.log('h1 clicked')
+                $(this)
+                    .hide('slow')
+                    .show('slow')
+            })
+            $('.main').fadeOut()
+            $('#t').fadeOut()
+            // we can make AJAX calls - long way
+            $.ajax({
+                type: 'GET',
+                url: 'https://jsonplaceholder.typicode.com/photos/2',
+                success: function (data) { 
+                    console.log(data)
+                    $('#monitor').append(data['title'])
+                },
+                failure: function (err) { console.log(err) },
+                contentType: 'application/json; charset=utf 8', // we may send json to the server
+                dataType: 'json' // we expect to receive json back from the server
+            })
+            // short way
+            $.getJSON('https://jsonplaceholder.typicode.com/photos/4', function(data){
+                console.log(data)
+            })
+        })
+    </script>
+</head>
+
+<body>
+    <h1>Welcome to jQuery</h1>
+    <p class="main">This is a simple example</p>
+    <p class="main">This is a simple example</p>
+    <p class="main">This is a simple example</p>
+    <hr />
+    <div id="monitor"></div>
+    <hr />
+    <ol>
+        <li id="t">tag selectors</li>
+        <li id="c">class selectors</li>
+        <li id="i">id selectors</li>
+    </ol>
+</body>
+
+</html>
